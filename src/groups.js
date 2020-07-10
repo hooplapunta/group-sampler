@@ -1,4 +1,4 @@
-// in src/posts.js
+// in src/groups.js
 import * as React from "react";
 // tslint:disable-next-line:no-var-requires
 import {
