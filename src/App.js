@@ -1,6 +1,6 @@
 import * as React from "react";
-import { PostList, PostShow, PostCreate, PostEdit } from "./posts";
-import { CommentList, CommentShow, CommentCreate, CommentEdit } from "./comments";
+import { GroupCreate, GroupList, GroupShow } from "./groups";
+import { OpinionList, OpinionCreate, OpinionShow } from "./opinions";
 import { Admin, Resource } from "react-admin";
 import {
   FirebaseDataProvider,
@@ -26,19 +26,17 @@ class App extends React.Component {
         dataProvider={dataProvider}
       >
         <Resource
-          name="posts"
-          list={PostList}
-          show={PostShow}
-          create={PostCreate}
-          edit={PostEdit}
+          name="groups"
+          list={GroupList}
+          show={GroupShow}
+          create={GroupCreate}
         />
         <Resource
-          name="comments"
+          name="opinions"
           icon={CommentIcon}
-          list={CommentList}
-          show={CommentShow}
-          create={CommentCreate}
-          edit={CommentEdit}
+          list={OpinionList}
+          show={OpinionShow}
+          create={OpinionCreate}
         />
       </Admin>
     );
