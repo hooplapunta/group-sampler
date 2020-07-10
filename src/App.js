@@ -24,7 +24,6 @@ class App extends React.Component {
       <Admin
         loginPage={CustomLoginPage} 
         dataProvider={dataProvider}
-        authProvider={authProvider}
       >
         <Resource
           name="posts"
